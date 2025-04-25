@@ -1,0 +1,110 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    color: #030b53;
+    margin-top: 50px;
+}
+
+/* Form Styling */
+.page-form {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Adding shadow */
+    border-radius: 10px;
+}
+
+/* Input Fields */
+.input {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Radio Buttons */
+.input input[type="radio"] {
+    margin-right: 5px;
+}
+
+.input label {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Submit Button */
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .page-form {
+        width: 90%;
+        padding: 20px;
+    }
+}
+/* تنسيق رسالة الخطأ */
+.alert {
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* تنسيق رسائل الخطأ (Danger) */
+.alert-danger {
+    background-color: #f8d7da;
+    color: #c32734;
+    border: 1px solid #f5c6cb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.alert-danger a {
+    color: #c32734;
+    text-decoration: underline;
+}
+
+/* إضافة تأثير عند التمرير */
+.alert-danger:hover {
+    background-color: #f1b0b7;
+    transition: background-color 0.3s ease;
+}

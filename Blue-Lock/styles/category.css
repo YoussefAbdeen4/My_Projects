@@ -1,0 +1,111 @@
+/* تنسيق القسم */
+.subcategories-container , .categories-container{
+    display: flex;
+    /*justify-content: center;*/
+    /*gap: 10px;*/
+}
+.cats {
+    padding: 30px 20px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* تنسيق عنوان القسم */
+.cats h2 {
+    font-size: 32px;
+    color: #030b53;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+/* تنسيق قسم إضافة التصنيف */
+.add-cat {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.add-cat a {
+    text-decoration: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-cat a:hover {
+    background-color: #45a049;
+}
+
+/* تنسيق الأيقونة داخل زر إضافة التصنيف */
+.add-cat img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* تنسيق التصنيفات (المنتجات) الموجودة */
+.cat {
+    display: inline-block;
+    width: 400px;
+    height: auto;
+    margin: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    padding: 15px;
+
+}
+
+.cat:hover {
+    transform: scale(1.05);
+}
+
+/* تنسيق الصورة داخل التصنيف */
+.cat img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* تنسيق النص داخل التصنيف */
+.cat p {
+    font-size: 18px;
+    color: #333;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* تنسيق النص الصغير داخل التصنيف (السعر والكميات المتاحة) */
+.cat small {
+    font-size: 14px;
+    color: #666;
+}
+
+/* استجابة لعرض العناصر في شاشات صغيرة */
+@media (max-width: 768px) {
+    .cat {
+        width: 48%;
+    }
+
+    .add-cat a {
+        font-size: 16px;
+        padding: 12px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cat {
+        width: 100%;
+    }
+}

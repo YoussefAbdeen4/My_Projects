@@ -1,0 +1,72 @@
+/* Container Styles */
+.container {
+    max-width: 100%;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Heading Styles */
+.container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Table Row Styles */
+table tr {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+table td {
+    padding: 12px;
+    text-align: left;
+}
+
+/* Price Styling */
+.price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Delete Button Styling */
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect for the Delete button */
+.btn:hover {
+    background-color: #d33;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    table td {
+        padding: 8px;
+    }
+
+    .btn {
+        padding: 6px 12px;
+    }
+}

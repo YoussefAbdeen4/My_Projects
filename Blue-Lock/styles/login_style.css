@@ -1,0 +1,101 @@
+/* General Styling */
+
+h2 {
+    text-align: center;
+    color: #030b53;
+    margin-top: 50px;
+}
+
+/* Background Styling */
+.bg-contact {
+    background-color: #ffffff;
+    color: white;
+    padding: 20px 0;
+}
+
+/* Form Styling */
+.page-form {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto 20px; /* Added margin-bottom here */
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Shadow box */
+    border-radius: 10px;
+}
+
+/* Form Elements */
+form .Login {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+form input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Checkbox Styling */
+.check-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.check-box input {
+    margin-right: 10px;
+}
+
+.check-box label {
+    font-size: 12px;
+    color: #333;
+}
+
+/* Submit Button Styling */
+.btn-submit {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #2980b9;
+}
+
+/* Create Account Link */
+.btn-login {
+    color: #3498db;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.btn-login:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .page-form {
+        width: 90%;
+        padding: 20px;
+    }
+}

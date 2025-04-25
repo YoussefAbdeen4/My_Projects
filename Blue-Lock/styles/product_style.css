@@ -1,0 +1,95 @@
+/* General Section Styles */
+.pro-container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.pro {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 24px;
+    color: #030b53;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Add Product Button */
+.add-pro {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.add-pro a {
+    text-decoration: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.add-pro a:hover {
+    background-color: #3b55ff;
+}
+
+.add-pro img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* Product Cards */
+.pro {
+    display: inline-block;
+    /*width: 240px;*/
+    margin: 15px 1%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.pro:hover {
+    transform: scale(1.05);
+}
+
+.pro img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.pro p {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.pro small {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .pro {
+        width: 48%;
+    }
+}
+
+@media (max-width: 480px) {
+    .pro {
+        width: 100%;
+    }
+}
